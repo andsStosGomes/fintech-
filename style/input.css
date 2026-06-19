@@ -28,4 +28,16 @@
   .nav-scroll::-webkit-scrollbar {
     display: none;
   }
+
+  #menu-toggle:checked ~ div .menu-icon-open {
+    @apply hidden;
+  }
+
+  #menu-toggle:checked ~ div .menu-icon-close {
+    @apply block;
+  }
+
+  .mobile-nav {
+    @apply sm:gap-2 sm:overflow-x-auto sm:pb-0;
+  }
 }

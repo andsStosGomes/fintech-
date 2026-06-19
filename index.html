@@ -9,14 +9,30 @@
 <body class="min-h-screen bg-fintech-bg font-sans text-slate-800 antialiased">
 
   <header class="sticky top-0 z-50 border-b border-slate-100 bg-white">
-    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-8 sm:py-4">
-      <a href="#" class="text-lg font-bold tracking-tight text-slate-900 sm:text-xl">FinTech Pro</a>
-      <nav class="nav-scroll flex gap-2 overflow-x-auto pb-1 sm:pb-0">
-        <a href="#" class="nav-link nav-link-active shrink-0">Dashboard</a>
-        <a href="#" class="nav-link shrink-0">Cadastro de Conta</a>
-        <a href="#" class="nav-link shrink-0">Extrato</a>
-        <a href="#" class="nav-link shrink-0">Transferência</a>
-        <a href="#" class="nav-link shrink-0">Cartões</a>
+    <div class="mx-auto max-w-6xl px-4 py-3 sm:flex sm:items-center sm:justify-between sm:px-8 sm:py-4">
+      <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-label="Abrir ou fechar menu de navegação">
+
+      <div class="flex items-center justify-between sm:flex-shrink-0">
+        <a href="#" class="text-lg font-bold tracking-tight text-slate-900 sm:text-xl">FinTech Pro</a>
+        <label for="menu-toggle" class="menu-btn flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg text-slate-700 transition hover:bg-slate-100 sm:hidden" aria-label="Abrir menu de navegação">
+          <svg class="menu-icon-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16"/>
+            <path d="M4 12h16"/>
+            <path d="M4 17h16"/>
+          </svg>
+          <svg class="menu-icon-close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M6 6l12 12"/>
+            <path d="M18 6L6 18"/>
+          </svg>
+        </label>
+      </div>
+
+      <nav class="mobile-nav hidden w-full flex-col gap-2 border-t border-slate-100 pt-4 peer-checked:flex sm:flex sm:w-auto sm:flex-row sm:justify-end sm:gap-2 sm:border-0 sm:pt-0">
+        <a href="#" class="nav-link nav-link-active w-full text-center sm:w-auto sm:shrink-0">Dashboard</a>
+        <a href="#" class="nav-link w-full text-center sm:w-auto sm:shrink-0">Cadastro de Conta</a>
+        <a href="#" class="nav-link w-full text-center sm:w-auto sm:shrink-0">Extrato</a>
+        <a href="#" class="nav-link w-full text-center sm:w-auto sm:shrink-0">Transferência</a>
+        <a href="#" class="nav-link w-full text-center sm:w-auto sm:shrink-0">Cartões</a>
       </nav>
     </div>
   </header>
