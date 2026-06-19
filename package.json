@@ -1,0 +1,13 @@
+{
+  "name": "fintech-pro",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./style/input.css -o ./style/style.css --minify",
+    "dev:css": "tailwindcss -i ./style/input.css -o ./style/style.css --watch",
+    "start": "npx --yes serve ."
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

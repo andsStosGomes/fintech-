@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply px-4 py-2 rounded-full text-sm font-medium text-slate-500 bg-slate-100 transition-colors hover:bg-slate-200;
+  }
+
+  .nav-link-active {
+    @apply bg-fintech-purple text-white hover:bg-fintech-purple-dark;
+  }
+
+  .card-base {
+    @apply bg-white rounded-card shadow-card p-6;
+  }
+
+  .chart-svg {
+    @apply flex-1 w-full min-h-0;
+  }
+}
